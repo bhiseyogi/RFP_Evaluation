@@ -1,0 +1,536 @@
+{
+  "rfp_run_id": "RFP-20261017-115624-615FB4",
+  "created_at": "2026-10-17T11:56:24+00:00",
+  "status": "COMPLETED",
+  "provider": "mock",
+  "model": "offline-heuristic-v1",
+  "criteria": [
+    {
+      "criterion_id": 1,
+      "name": "Technical Capability",
+      "description": "Architecture, integrations, scalability, technical fit with the stated requirement.",
+      "weight": 30.0,
+      "max_score": 10.0,
+      "is_active": true
+    },
+    {
+      "criterion_id": 2,
+      "name": "Implementation Plan",
+      "description": "Timeline, milestones, staffing, delivery governance and risk plan.",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": true
+    },
+    {
+      "criterion_id": 3,
+      "name": "Commercial Value",
+      "description": "Pricing clarity, total cost of ownership, assumptions and value for money.",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": true
+    },
+    {
+      "criterion_id": 4,
+      "name": "Security & Compliance",
+      "description": "Security controls, certifications, privacy, data residency and auditability.",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": true
+    },
+    {
+      "criterion_id": 5,
+      "name": "Support & Experience",
+      "description": "Support model and SLAs, similar past projects, named references.",
+      "weight": 10.0,
+      "max_score": 10.0,
+      "is_active": true
+    }
+  ],
+  "tie_break_rules": [
+    "Higher Peer Performance Index (PPI)",
+    "Earlier submission date",
+    "Higher historical experience rating",
+    "Supplier name in ascending (A-Z) order"
+  ],
+  "benchmarks": {
+    "1": 9.5,
+    "2": 10.0,
+    "3": 10.0,
+    "4": 8.5,
+    "5": 10.0
+  },
+  "suppliers": [
+    {
+      "supplier_name": "NexaWorks",
+      "submission_date": "2026-10-06",
+      "experience_rating": 8.0,
+      "evaluation_status": "ok",
+      "absolute_score": 85.0,
+      "ppi": 88.38080495356039,
+      "final_rank": 1,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "weight": 30.0,
+          "max_score": 10.0,
+          "score": 8.0,
+          "status": "ok",
+          "benchmark": 9.5,
+          "gap": -1.5,
+          "relative_pct": 84.21052631578947,
+          "weighted_contribution": 24.0,
+          "ppi_contribution": 25.263157894736842,
+          "justification": "[offline heuristic] Indicator coverage 80%; matched: architecture, microservices, rest apis, kubernetes, load test, canonical.",
+          "evidence": "Load tests are run against a target of 4,000 transactions per hour before go-live.",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 10.0,
+          "status": "ok",
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_contribution": 20.0,
+          "ppi_contribution": 20.0,
+          "justification": "[offline heuristic] Indicator coverage 100%; matched: phase 1, milestone, governance, project manager, team of 14, risk register.",
+          "evidence": "Risk plan: we maintain a risk register with owners and mitigation actions; the eight initial risks are SAP interface changes, data quality, key-user availability, performance at peak, integration environment delays, scope creep, cutover win",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 9.5,
+          "status": "ok",
+          "benchmark": 10.0,
+          "gap": -0.5,
+          "relative_pct": 95.0,
+          "weighted_contribution": 19.0,
+          "ppi_contribution": 19.0,
+          "justification": "[offline heuristic] Indicator coverage 95%; matched: price table, total contract, inr, assumption, payment terms, fixed price.",
+          "evidence": "Price Table and Assumptions Item Description 3-year cost (INR lakh) Platform licence (3 years) NexaFlow core, Kafka, 4 environments 110.0 Implementation services Mobilisation to hypercare 135.0 SAP and CRM connectors BAPI/IDoc and REST conn",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 6.0,
+          "status": "ok",
+          "benchmark": 8.5,
+          "gap": -2.5,
+          "relative_pct": 70.58823529411765,
+          "weighted_contribution": 12.0,
+          "ppi_contribution": 14.11764705882353,
+          "justification": "[offline heuristic] Indicator coverage 60%; matched: iso/iec 27001, soc 2, penetration test, aes-256, role-based, audit log.",
+          "evidence": "Security, Compliance and Risk Controls NexaWorks is ISO/IEC 27001 certified and has a SOC 2 Type I report, with the Type II audit window under way.",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "weight": 10.0,
+          "max_score": 10.0,
+          "score": 10.0,
+          "status": "ok",
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_contribution": 10.0,
+          "ppi_contribution": 10.0,
+          "justification": "[offline heuristic] Indicator coverage 100%; matched: 24x7, sla, service credit, tam, priority 1, resolution target.",
+          "evidence": "Price Table and Assumptions Item Description 3-year cost (INR lakh) Platform licence (3 years) NexaFlow core, Kafka, 4 environments 110.0 Implementation services Mobilisation to hypercare 135.0 SAP and CRM connectors BAPI/IDoc and REST conn",
+          "evidence_verified": true
+        }
+      ],
+      "risks": [
+        "No major gaps identified by the offline heuristic."
+      ],
+      "overall_summary": "Offline heuristic summary: scores reflect keyword-indicator coverage per criterion.",
+      "source_file": "NexaWorks_RFP_Response.pdf"
+    },
+    {
+      "supplier_name": "Apex Systems",
+      "submission_date": "2026-10-05",
+      "experience_rating": 8.5,
+      "evaluation_status": "ok",
+      "absolute_score": 75.5,
+      "ppi": 80.0,
+      "final_rank": 2,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "weight": 30.0,
+          "max_score": 10.0,
+          "score": 9.5,
+          "status": "ok",
+          "benchmark": 9.5,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_contribution": 28.5,
+          "ppi_contribution": 30.0,
+          "justification": "[offline heuristic] Indicator coverage 97%; matched: architecture, api-first, webhooks, kubernetes, load test, sustained 6,000 transactions.",
+          "evidence": "Scalability evidence: in a recent load test, the platform sustained 6,000 transactions per hour with 400 concurrent API sessions and a median processing latency of 1.8 seconds.",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 6.0,
+          "status": "ok",
+          "benchmark": 10.0,
+          "gap": -4.0,
+          "relative_pct": 60.0,
+          "weighted_contribution": 12.0,
+          "ppi_contribution": 12.0,
+          "justification": "[offline heuristic] Indicator coverage 62%; matched: phase 1, milestone, governance, project manager, eight engineers, risk register.",
+          "evidence": "Implementation Approach, Timeline and Team The programme runs for nine months in four phases: Phase 1 Discovery and Design (6 weeks), Phase 2 Build (14 weeks), Phase 3 Integration Testing and UAT (10 weeks) and Phase 4 Go-live and Stabilisa",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 5.5,
+          "status": "ok",
+          "benchmark": 10.0,
+          "gap": -4.5,
+          "relative_pct": 55.00000000000001,
+          "weighted_contribution": 11.0,
+          "ppi_contribution": 11.000000000000002,
+          "justification": "[offline heuristic] Indicator coverage 54%; matched: price table, total contract, rs., assumption, payment terms, fixed price.",
+          "evidence": "Price Table and Assumptions   Apex Systems | Response to RFP-2026-017 | Synthetic classroom data - fictional Page 2 Item Description 3-year cost (INR lakh) Platform licence (3 years) ApexConnect core, Kafka, 5 environments 165.0 Implementat",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 8.5,
+          "status": "ok",
+          "benchmark": 8.5,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_contribution": 17.0,
+          "ppi_contribution": 20.0,
+          "justification": "[offline heuristic] Indicator coverage 83%; matched: iso/iec 27001, soc 2, soc 2 type ii report, penetration test, aes-256, role-based.",
+          "evidence": "Security, Compliance and Risk Controls Apex Systems is certified to ISO/IEC 27001 and holds a SOC 2 Type II report covering the ApexConnect platform.",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "weight": 10.0,
+          "max_score": 10.0,
+          "score": 7.0,
+          "status": "ok",
+          "benchmark": 10.0,
+          "gap": -3.0,
+          "relative_pct": 70.0,
+          "weighted_contribution": 7.0,
+          "ppi_contribution": 7.0,
+          "justification": "[offline heuristic] Indicator coverage 72%; matched: 24x7, sla, service credit, priority 1, similar integration, references:.",
+          "evidence": "- 24x7 Priority 1 coverage is optional and is quoted separately at INR 22 lakh over three years.",
+          "evidence_verified": true
+        }
+      ],
+      "risks": [
+        "No major gaps identified by the offline heuristic."
+      ],
+      "overall_summary": "Offline heuristic summary: scores reflect keyword-indicator coverage per criterion.",
+      "source_file": "Apex_Systems_RFP_Response.pdf"
+    },
+    {
+      "supplier_name": "Orbit Digital",
+      "submission_date": "2026-10-04",
+      "experience_rating": 9.0,
+      "evaluation_status": "ok",
+      "absolute_score": 42.5,
+      "ppi": 43.89318885448917,
+      "final_rank": 3,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "weight": 30.0,
+          "max_score": 10.0,
+          "score": 1.0,
+          "status": "ok",
+          "benchmark": 9.5,
+          "gap": -8.5,
+          "relative_pct": 10.526315789473683,
+          "weighted_contribution": 3.0,
+          "ppi_contribution": 3.1578947368421053,
+          "justification": "[offline heuristic] Indicator coverage 10%; matched: architecture, connectors, integration platform, to be confirmed.",
+          "evidence": "Orbit Digital | Response to RFP-2026-017 | Synthetic classroom data - fictional Page 1 Orbit Digital Proposal in response to RFP-2026-017: Enterprise Order-to-Cash Integration Platform Submitted to: Meridian Foods Pvt Ltd (fictional) 1.",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 5.0,
+          "status": "ok",
+          "benchmark": 10.0,
+          "gap": -5.0,
+          "relative_pct": 50.0,
+          "weighted_contribution": 10.0,
+          "ppi_contribution": 10.0,
+          "justification": "[offline heuristic] Indicator coverage 50%; matched: phase 1, milestone, steering committee, project manager, fte, risk register.",
+          "evidence": "Implementation Approach and Timeline Orbit proposes delivery in approximately eight months in four phases: Phase 1 Discovery (6 weeks), Phase 2 Build (16 weeks), Phase 3 Testing and UAT (8 weeks) and Phase 4 Go-live (4 weeks).",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 6.5,
+          "status": "ok",
+          "benchmark": 10.0,
+          "gap": -3.5,
+          "relative_pct": 65.0,
+          "weighted_contribution": 13.0,
+          "ppi_contribution": 13.0,
+          "justification": "[offline heuristic] Indicator coverage 64%; matched: price table, total contract, inr, assumption, payment terms, to be confirmed.",
+          "evidence": "Price Table and Assumptions Item Description 3-year cost (INR lakh) Platform licence (3 years) OrbitHub core 105.0 Implementation services Estimated; subject to scoping 150.0 Connectors and training Quantity to be confirmed 25.0 Support (3",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 3.5,
+          "status": "ok",
+          "benchmark": 8.5,
+          "gap": -5.0,
+          "relative_pct": 41.17647058823529,
+          "weighted_contribution": 7.0,
+          "ppi_contribution": 8.235294117647058,
+          "justification": "[offline heuristic] Indicator coverage 37%; matched: iso/iec 27001, penetration test, encrypted in transit, multi-factor, audit log, disaster recovery.",
+          "evidence": "Security and Compliance Orbit Digital is ISO/IEC 27001 certified.",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "weight": 10.0,
+          "max_score": 10.0,
+          "score": 9.5,
+          "status": "ok",
+          "benchmark": 10.0,
+          "gap": -0.5,
+          "relative_pct": 95.0,
+          "weighted_contribution": 9.5,
+          "ppi_contribution": 9.5,
+          "justification": "[offline heuristic] Indicator coverage 94%; matched: 24x7, sla, service credit, priority 1, similar integration, references:.",
+          "evidence": "Price Table and Assumptions Item Description 3-year cost (INR lakh) Platform licence (3 years) OrbitHub core 105.0 Implementation services Estimated; subject to scoping 150.0 Connectors and training Quantity to be confirmed 25.0 Support (3",
+          "evidence_verified": true
+        }
+      ],
+      "risks": [
+        "Weak or unclear evidence for 'Technical Capability'.",
+        "Weak or unclear evidence for 'Implementation Plan'.",
+        "Weak or unclear evidence for 'Security & Compliance'."
+      ],
+      "overall_summary": "Offline heuristic summary: scores reflect keyword-indicator coverage per criterion.",
+      "source_file": "Orbit_Digital_RFP_Response.pdf"
+    },
+    {
+      "supplier_name": "BrightPath Tech",
+      "submission_date": "2026-10-07",
+      "experience_rating": 5.0,
+      "evaluation_status": "ok",
+      "absolute_score": 33.0,
+      "ppi": 33.33436532507741,
+      "final_rank": 4,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "weight": 30.0,
+          "max_score": 10.0,
+          "score": 1.0,
+          "status": "ok",
+          "benchmark": 9.5,
+          "gap": -8.5,
+          "relative_pct": 10.526315789473683,
+          "weighted_contribution": 3.0,
+          "ppi_contribution": 3.1578947368421053,
+          "justification": "[offline heuristic] Indicator coverage 10%; matched: connectors, integration platform, generic.",
+          "evidence": "BrightPath Tech | Response to RFP-2026-017 | Synthetic classroom data - fictional Page 1 BrightPath Tech Proposal in response to RFP-2026-017: Enterprise Order-to-Cash Integration Platform Submitted to: Meridian Foods Pvt Ltd (fictional) 1.",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 4.5,
+          "status": "ok",
+          "benchmark": 10.0,
+          "gap": -5.5,
+          "relative_pct": 45.0,
+          "weighted_contribution": 9.0,
+          "ppi_contribution": 9.0,
+          "justification": "[offline heuristic] Indicator coverage 46%; matched: phase 1, milestone, delivery lead, team of five, risk log, go-live.",
+          "evidence": "Implementation Plan We will deliver in five months using two phases: Phase 1 Build (3 months) and Phase 2 Testing and Go-live (2 months).",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 10.0,
+          "status": "ok",
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_contribution": 20.0,
+          "ppi_contribution": 20.0,
+          "justification": "[offline heuristic] Indicator coverage 100%; matched: price table, total contract, inr, assumption, payment terms, fixed all-inclusive.",
+          "evidence": "Price Table and Assumptions Item Description 3-year cost (INR lakh) Platform subscription (3 years) BrightPath Flow, 2 environments 70.0 Implementation services Build, testing, go-live 95.0 Connectors and training Standard connectors, 10 us",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "score": 0.5,
+          "status": "ok",
+          "benchmark": 8.5,
+          "gap": -8.0,
+          "relative_pct": 5.88235294117647,
+          "weighted_contribution": 1.0,
+          "ppi_contribution": 1.1764705882352942,
+          "justification": "[offline heuristic] Indicator coverage 7%; matched: iso 27001, penetration test, tls, disaster recovery, certification is in progress, industry best practices.",
+          "evidence": "Our ISO 27001 certification is in progress and is planned for the second quarter of next year.",
+          "evidence_verified": true
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "weight": 10.0,
+          "max_score": 10.0,
+          "score": 0.0,
+          "status": "ok",
+          "benchmark": 10.0,
+          "gap": -10.0,
+          "relative_pct": 0.0,
+          "weighted_contribution": 0.0,
+          "ppi_contribution": 0.0,
+          "justification": "[offline heuristic] Indicator coverage 0%; matched: similar project, one similar, recently established, business hours, available on request.",
+          "evidence": "BrightPath was recently established in 2022 and has completed one similar project, for a regional distributor.",
+          "evidence_verified": true
+        }
+      ],
+      "risks": [
+        "Weak or unclear evidence for 'Technical Capability'.",
+        "Weak or unclear evidence for 'Implementation Plan'.",
+        "Weak or unclear evidence for 'Security & Compliance'.",
+        "Weak or unclear evidence for 'Support & Experience'."
+      ],
+      "overall_summary": "Offline heuristic summary: scores reflect keyword-indicator coverage per criterion.",
+      "source_file": "BrightPath_Tech_RFP_Response.pdf"
+    }
+  ],
+  "tie_break_explanations": [
+    "Rank 1 NexaWorks above rank 2 Apex Systems: decided by rule 1 (higher PPI): 88.38 vs 80.00.",
+    "Rank 2 Apex Systems above rank 3 Orbit Digital: decided by rule 1 (higher PPI): 80.00 vs 43.89.",
+    "Rank 3 Orbit Digital above rank 4 BrightPath Tech: decided by rule 1 (higher PPI): 43.89 vs 33.33."
+  ],
+  "warnings": [],
+  "agent_trace": [
+    {
+      "tool": "orchestrator",
+      "supplier": "",
+      "detail": "run RFP-20261017-115624-615FB4 created with 5 active criteria and 4 supplier(s)"
+    },
+    {
+      "tool": "document_tool",
+      "supplier": "Apex Systems",
+      "detail": "extracted 5,239 characters from 2 page(s)"
+    },
+    {
+      "tool": "evaluation_agent",
+      "supplier": "Apex Systems",
+      "detail": "attempt 1: received 2,455 characters from offline-heuristic-v1"
+    },
+    {
+      "tool": "validation_tool",
+      "supplier": "Apex Systems",
+      "detail": "scorecard normalised with 0 warning(s)"
+    },
+    {
+      "tool": "document_tool",
+      "supplier": "BrightPath Tech",
+      "detail": "extracted 2,911 characters from 2 page(s)"
+    },
+    {
+      "tool": "evaluation_agent",
+      "supplier": "BrightPath Tech",
+      "detail": "attempt 1: received 2,552 characters from offline-heuristic-v1"
+    },
+    {
+      "tool": "validation_tool",
+      "supplier": "BrightPath Tech",
+      "detail": "scorecard normalised with 0 warning(s)"
+    },
+    {
+      "tool": "document_tool",
+      "supplier": "NexaWorks",
+      "detail": "extracted 4,611 characters from 2 page(s)"
+    },
+    {
+      "tool": "evaluation_agent",
+      "supplier": "NexaWorks",
+      "detail": "attempt 1: received 2,464 characters from offline-heuristic-v1"
+    },
+    {
+      "tool": "validation_tool",
+      "supplier": "NexaWorks",
+      "detail": "scorecard normalised with 0 warning(s)"
+    },
+    {
+      "tool": "document_tool",
+      "supplier": "Orbit Digital",
+      "detail": "extracted 3,360 characters from 2 page(s)"
+    },
+    {
+      "tool": "evaluation_agent",
+      "supplier": "Orbit Digital",
+      "detail": "attempt 1: received 2,677 characters from offline-heuristic-v1"
+    },
+    {
+      "tool": "validation_tool",
+      "supplier": "Orbit Digital",
+      "detail": "scorecard normalised with 0 warning(s)"
+    },
+    {
+      "tool": "ranking_tool",
+      "supplier": "",
+      "detail": "benchmarks, gaps, relative %, PPI computed; ranks assigned with tie-break rules"
+    },
+    {
+      "tool": "orchestrator",
+      "supplier": "",
+      "detail": "results persisted to SQLite"
+    }
+  ]
+}
